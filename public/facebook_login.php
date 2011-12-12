@@ -39,9 +39,9 @@ $user = json_decode(file_get_contents(
 <div id="header">	
 	<span style="float:right;">
 	<?php if ($cookie) { ?>
-     <table border="0">
+     <table border="0" style="color:white;">
 		<tr>
-			<td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=small"/></td>
+			<td><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=medium"/></td>
 			<td>Welcome <?= $user->name ?></td>
 		</tr>
 		<tr>
