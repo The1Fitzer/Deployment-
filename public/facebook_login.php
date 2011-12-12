@@ -29,7 +29,7 @@ $user = json_decode(file_get_contents(
     $cookie['access_token']));
 $access_token = $cookie['access_token'];
 
-$user_array = array($user->id, $user->name, $user->first_name, $user->second_name, $user->gender, $user->locale,$access_token);
+$user_array = array($user->id, $user->name, $user->first_name, $user->last_name, $user->gender, $user->locale,$access_token);
 
 add_user($user_array);
 ?>
