@@ -30,7 +30,7 @@
 		<?php if($cookie){?>
 			Welcome <?= $user->name?>
 		<?php } else{?>
-			<fb:login-button></fb:login-button>
+			<div class="fb-login-button" data-perms="email,offline_access">Login with Facebook</div>
 		<?php }?>
 		
 		<div id="fb-root"></div>
