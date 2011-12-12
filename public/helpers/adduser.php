@@ -18,9 +18,9 @@
 		if($result){
 			//do nothing
 		}else{
-			$insert_user = "insert into `$db_name`.`users` (id,name,first_name,second_name,gender,locale,access_token) values ($user_id, "$user_name","$first_name","$second_name","$gender","$locale","$access")";
-			echo $query;
-			$result = $mysqli->query($insert_user);
+			$insert_user = "insert into $db_name.users";
+			echo $insert_user;
+			//$result = $mysqli->query($insert_user);
 		}
 	}
 ?>
