@@ -39,11 +39,12 @@ $user = json_decode(file_get_contents(
 <div id="header">	
 	<span style="float:right;">
 	<?php if ($cookie) { ?>
-      <p style="color: white;">Welcome <?= $user->name ?>
+      <p style="color: white;">Welcome <?= $user->name ?></p>
     <?php } else { ?>
       <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
     <?php } ?>
 	</span>
+</div>
 <div id="wrapper">
 <div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
 <div id="content">
