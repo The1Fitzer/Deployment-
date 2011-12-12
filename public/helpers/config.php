@@ -7,7 +7,7 @@
 	
 	$mysqli = new mysqli($db_host, $db_user, $db_pass);
 	
-	if(mysqli_connection_errno()){
+	if(mysqli_connect_errno()){
 		print("Connection Failed: " . mysqli_connect_error());
 		exit();
 	}
