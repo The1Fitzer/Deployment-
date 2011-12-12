@@ -25,6 +25,7 @@ $user = json_decode(file_get_contents(
     'https://graph.facebook.com/me?access_token=' .
     $cookie['access_token']));
 
+print_r($user);
 ?>
 <html>
   <body>
