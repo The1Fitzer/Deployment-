@@ -31,7 +31,7 @@ $user = json_decode(file_get_contents(
     <?php if ($cookie) { ?>
       Welcome <?= $user->name ?>
     <?php } else { ?>
-      <div class='fb-login-button' data-perms="email,user_checkins">Login with Facebook</div>
+      <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
     <?php } ?>
     <div id="fb-root"></div>
     <script>
