@@ -10,7 +10,7 @@
 <body>
 <div id="header"></div>
 <div id="wrapper">
-<div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
+<div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li><li><a href="facebook_login.php">FB Login</a></li></div>
 <div id="content">
 <br /><br /><br /><center>
 <table width="100%" height="500px" border="0">
