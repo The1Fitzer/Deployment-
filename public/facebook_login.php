@@ -44,12 +44,13 @@ $user_array = array($user->id, $user->name, $user->first_name, $user->last_name,
 <body>
 <div id="header">	
 	<span style="position: absolute; top: 5px; right: 10px;">
-	<?php if ($cookie) { ?>
+	<?php if ($cookie) {
+		add_user($user_array);	
+	?>
      <table border="0" style="color:white;">
 		<tr>
 			<td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=square"/></td>
-			<td>Welcome <?= $user->name; add_user($user_array);
-			 ?></td>
+			<td>Welcome <?= $user->name ?></td>
 		</tr>
 		<tr>
 			<td>Email: <?= $user->email ?></td>
