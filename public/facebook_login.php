@@ -5,7 +5,7 @@
 	function get_facebook_cookie($app_id, $app_secret){
 		$args = array();
 		
-		pars_str(trim($_COOKIE['fbs_'. $app_id], '\\""'), $args);
+		parse_str(trim($_COOKIE['fbs_'. $app_id], '\\""'), $args);
 		ksort($args);
 		$payload = '';
 		
