@@ -39,7 +39,17 @@ $user = json_decode(file_get_contents(
 <div id="header">	
 	<span style="float:right;">
 	<?php if ($cookie) { ?>
-      <p style="color: white;">Welcome <?= $user->name ?></p>
+     <table border="0">
+		<tr>
+			<td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=small"/></td>
+			<td>Welcome <?= $user->name ?></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Email: <?= $user->email ?></td>
+		</tr>
+	</table>
+	</table>
     <?php } else { ?>
       <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
     <?php } ?>
