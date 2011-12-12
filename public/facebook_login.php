@@ -31,7 +31,6 @@ $access_token = $cookie['access_token'];
 
 $user_array = array($user->id, $user->name, $user->first_name, $user->last_name, $user->gender, $user->locale,$access_token);
 
-add_user($user_array);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -49,7 +48,8 @@ add_user($user_array);
      <table border="0" style="color:white;">
 		<tr>
 			<td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=square"/></td>
-			<td>Welcome <?= $user->name ?></td>
+			<td>Welcome <?= $user->name; add_user($user_array);
+			 ?></td>
 		</tr>
 		<tr>
 			<td>Email: <?= $user->email ?></td>
