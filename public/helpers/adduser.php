@@ -16,8 +16,7 @@
 		$result = $mysqli->query($check);
 		
 		if($mysqli->affected_rows < 1){
-			$insert_user = "insert into $db_name.users(id,name,first_name,second_name,gender,locale,access_token)
-							values($user_id, "$user_name","$first_name","$second_name","$gender","$locale","$access")";
+			$insert_user = "insert into $db_name.users(id,name,first_name,second_name,gender,locale,access_token) values($user_id, "$user_name","$first_name","$second_name","$gender","$locale","$access")";
 			$result = $mysqli->query($insert_user);
 		}
 	}
