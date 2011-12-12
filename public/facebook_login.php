@@ -1,5 +1,8 @@
 <?php
 error_reporting(0);
+
+//include('helpers/adduser.php');
+
 define('YOUR_APP_ID', '235024413234041');
 define('YOUR_APP_SECRET', 'd78a09e226c896d919d1de00c4b1cce3');
 
@@ -24,8 +27,9 @@ $cookie = get_facebook_cookie(YOUR_APP_ID, YOUR_APP_SECRET);
 $user = json_decode(file_get_contents(
     'https://graph.facebook.com/me?access_token=' .
     $cookie['access_token']));
+$access_token = $cookie['access_token'];
 
-print_r($user);
+//$user_array = array($user->id, $user->name, $user->first_name, $user->second_name, $user->gender, $user->locale, );
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -43,7 +47,7 @@ print_r($user);
      <table border="0" style="color:white;">
 		<tr>
 			<td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture?type=square"/></td>
-			<td>Welcome <?= $user->name ?></td>
+			<td>Welcome <?= $access_token ?></td>
 		</tr>
 		<tr>
 			<td>Email: <?= $user->email ?></td>
