@@ -45,7 +45,6 @@ $user = json_decode(file_get_contents(
 			<td>Welcome <?= $user->name ?></td>
 		</tr>
 		<tr>
-			<td></td>
 			<td>Email: <?= $user->email ?></td>
 		</tr>
 	</table>
