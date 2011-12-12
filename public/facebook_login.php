@@ -1,6 +1,6 @@
 <?php
 	define('app_id','235024413234041');
-	define('app_secret','d78a09e226c896d919d1de00c4b1cce3')
+	define('app_secret','d78a09e226c896d919d1de00c4b1cce3');
 	
 	function get_facebook_cookie($app_id, $app_secret){
 		$args = array();
