@@ -25,36 +25,56 @@ $user = json_decode(file_get_contents(
     'https://graph.facebook.com/me?access_token=' .
     $cookie['access_token']));
 
-print_r($user);
 ?>
-<html>
-  <body>
-    <?php if ($cookie) { ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<title>College Life</title>
+</head>
+
+<body>
+<div id="header"></div>
+<div id="wrapper">
+<div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
+<div id="content">
+<br /><br /><br /><center>
+<table width="100%" height="500px" border="0">
+<tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
+<tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
+</table></center>
+<div style="float:right;">
+	<?php if ($cookie) { ?>
       Welcome <?= $user->name ?>
     <?php } else { ?>
       <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
     <?php } ?>
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '<?= YOUR_APP_ID ?>',
-          status     : true, 
-          cookie     : true,
-          xfbml      : true
-        });
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '<?= YOUR_APP_ID ?>',
+      status     : true, 
+      cookie     : true,
+      xfbml      : true
+    });
 
-        FB.Event.subscribe('auth.login', function(response) {
-          window.location.reload();
-        });
-      };
+    FB.Event.subscribe('auth.login', function(response) {
+      window.location.reload();
+    });
+  };
 
-      (function(d){
-         var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-         js = d.createElement('script'); js.id = id; js.async = true;
-         js.src = "//connect.facebook.net/en_US/all.js";
-         d.getElementsByTagName('head')[0].appendChild(js);
-       }(document));
-    </script>
-  </body>
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+</body>
 </html>
