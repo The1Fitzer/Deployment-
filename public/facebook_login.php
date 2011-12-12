@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 define('YOUR_APP_ID', '235024413234041');
 define('YOUR_APP_SECRET', 'd78a09e226c896d919d1de00c4b1cce3');
 
@@ -36,7 +36,14 @@ $user = json_decode(file_get_contents(
 </head>
 
 <body>
-<div id="header"></div>
+<div id="header">	
+	<span style="float:right;">
+	<?php if ($cookie) { ?>
+      <p style="color: white;">Welcome <?= $user->name ?>
+    <?php } else { ?>
+      <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
+    <?php } ?>
+	</span>
 <div id="wrapper">
 <div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
 <div id="content">
@@ -45,13 +52,6 @@ $user = json_decode(file_get_contents(
 <tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
 <tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
 </table></center>
-<div style="float:right;">
-	<?php if ($cookie) { ?>
-      Welcome <?= $user->name ?>
-    <?php } else { ?>
-      <div class='fb-login-button' data-perms="email,offline_access">Login with Facebook</div>
-    <?php } ?>
-</div>
 </div>
 </div>
 <div id="fb-root"></div>
