@@ -15,12 +15,10 @@
 		$check = "select * from $db_name.users where id = $user_id";
 		$result = $mysqli->query($check) or die("Select Error: ".$mysqli->error);
 		
-		if($result){
-			//do nothing
-		}else{
+		if($mysqli->affected_rows < 1){
 			$insert_user = "insert into $db_name.users values ($user_id,'$user_name','$first_name','$second_name','$gender','$locale','$access')";
-			
-			$result = $mysqli->query($insert_user);
+
+				$result = $mysqli->query($insert_user);
 		}
 	}
 ?>
