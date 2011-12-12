@@ -37,7 +37,7 @@ $user = json_decode(file_get_contents(
 
 <body>
 <div id="header">	
-	<span style="float:right;">
+	<span style="position: absolute; top: 5px; right: 10px;">
 	<?php if ($cookie) { ?>
      <table border="0" style="color:white;">
 		<tr>
