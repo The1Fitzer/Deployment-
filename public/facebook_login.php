@@ -58,7 +58,7 @@ $user_array = array($user->id, $user->name, $user->first_name, $user->last_name,
 	</table>
 	</table>
     <?php } else { ?>
-      <div class='fb-login-button' data-scope="email,offline_access">Login with Facebook</div>
+      <div class='fb-login-button' scope="email,offline_access">Login with Facebook</div>
     <?php } ?>
 	</span>
 </div>
