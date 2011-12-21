@@ -15,9 +15,20 @@ $(document).ready(function(){
 			$.jGrowl("The username field is blank!");
 			event.preventDefault();
 		}	
-		if(password != confpass){
-			$.jGrowl("Your passwords did not match. Please try again");
-			event.preventDefault();
+		if(password === confpass){
+			$.ajax({
+				url: 'helpers/adduser.php',
+				type: 'POST',
+				data: {username:username,password:password},
+				success:function(data){
+					if(data === 1){
+						$.jGrowl('Registration Complete');
+						$("#registerblock").hide();
+					}else{
+						$.jGrowl('Registration not successful');
+					}
+				{
+			});
 		}
 	});	
 });
