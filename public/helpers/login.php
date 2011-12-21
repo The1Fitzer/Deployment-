@@ -6,7 +6,7 @@
 	if(isset($username)){
 		login($username, $password);
 	}else{
-		header("Location: http://deployment-project.orchestra.io/?s=2";
+		header("Location: http://deployment-project.orchestra.io/?s=2");
 	}
 
 	function login($username, $password){
