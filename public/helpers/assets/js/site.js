@@ -9,7 +9,8 @@ $(document).ready(function(){
 		var username = $("#rusername").val();
 		var password = $("#rpassword").val();
 		var confpass = $("#confimpass").val();
-		console.log(username);
+		console.log(password);
+		console.log(password);
 		if(username == ""){
 			$.jGrowl("The username field is blank!");
 			event.preventDefault();
