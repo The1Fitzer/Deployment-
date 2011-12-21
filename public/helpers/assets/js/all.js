@@ -5,14 +5,19 @@ $(document).ready(function(){
 		$("#registerblock").toggle();
 	});
 
-	$("#registerform").submit(function(){
+	$("#registerform").click(function(e){
 		$this = $(this);
 		var username = $("#rusername").val();
 		var password = $("#rpassword").val();
 		var confpass = $("#confimpass").val();
-		console.log(username);	
+		console.log(username);
+		if(username == ""){
+			$.jGrowl("The username field is blank!");
+			event.preventDefault();
+		}	
 		if(password != confpass){
 			$.jGrowl("Your passwords did not match. Please try again");
+			event.preventDefault();
 		}
 	});	
 });
