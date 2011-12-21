@@ -14,21 +14,7 @@
 
 <head>
 
-<!-- Begin Stylesheets -->
-		<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
-	<!-- End Stylesheets -->
-	
-	<!-- Begin JavaScript -->
-		<script type="text/javascript" src="javascripts/jquery-1.3.2.min.js"></script>
-		<script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="javascripts/jquery.coda-slider-2.0.js"></script>
-		 <script type="text/javascript">
-			$().ready(function() {
-				$('#coda-slider-1').codaSlider();
-			});
-		 </script>
-	<!-- End JavaScript -->
+
 
 
 
@@ -40,6 +26,24 @@
 <script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
 <link rel='stylesheet' href='helpers/assets/js/jquery.jgrowl.css' type='text/css'>
 <script type='text/javascript' src='helpers/assets/js/all2.js'></script>
+
+
+
+<!-- Begin Stylesheets -->
+		<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
+	<!-- End Stylesheets -->
+	
+	<!-- Begin JavaScript -->
+		
+		<script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.coda-slider-2.0.js"></script>
+		 <script type="text/javascript">
+			$().ready(function() {
+				$('#coda-slider-1').codaSlider();
+			});
+		 </script>
+	<!-- End JavaScript -->
 </head>
 
 <body>
