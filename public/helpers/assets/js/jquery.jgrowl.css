@@ -37,11 +37,11 @@ body>div.jGrowl{
 position:fixed;
 }
 div.jGrowl.top-left{
-left:0px;
+left:100px;
 top:100px;
 }
 div.jGrowl.top-right{
-right:0px;
+right:100px;
 top:100px;
 }
 div.jGrowl.bottom-left{
