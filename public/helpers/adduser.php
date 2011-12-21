@@ -4,9 +4,9 @@
 	$user_name = $_POST['username'];
 	$password = $_POST['password'];
 
-	add_user($username, $password);
+	add_user($user_name, $password);
 
-	function add_user($username, $password){
+	function add_user($user_name, $password){
 		global $mysqli; global $db_name;
 				
 		$insert_user = "insert into $db_name.users (username,password) values ($user_name, $password)";
