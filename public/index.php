@@ -3,7 +3,7 @@
 		$full_query_string = $_SERVER['QUERY_STRING'];
 	}
 	$string = explode("=",$full_query_string);
-	
+	if(isset($string)){	
 	if($string[1] == 1){
 		echo '<div id="regsuc" style="margin:0 auto; position:relative; top:200px; background-color: green; border-radius:15px; width:200px; z-index:10000000;">Registration Successfull</div>';
 	}elseif($string[1] == 2){
@@ -12,6 +12,7 @@
 		echo '<div id="loginfail" style="margin:0 auto; position:relative; top:200px; background-color: red; border-radius:15px; width:200px; z-index:10000000;">User does not exist</div>';
 	}elseif($string[1] == 4){
 			echo '<div id="loginfail" style="margin:0 auto; position:relative; top:200px; background-color: red; border-radius:15px; width:200px; z-index:10000000;">Login Successful</div>';
+	}
 	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
