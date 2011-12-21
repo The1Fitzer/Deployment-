@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 	include('helpers/getvideos.php');
-
+	include('helpers/getvideos2.php');
 	$youtube = get_vids();
+	$youtube2 = get_vids2();
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -53,7 +54,7 @@
                <div class="panel">
 					   <div class="panel-wrapper">
 							<?php foreach($youtube as $val){ 
-										echo "<img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='100px' width='100px'/>";
+										echo "<img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='200px' width='200px'/><br/>";
 									}
 							?>
                        </div>
@@ -61,7 +62,11 @@
 
 <div class="panel">
                        <div class="panel-wrapper">
-                                      <img src="http://tinypages.ie/logo.png" />                         
+                            <?php foreach($youtube2 as $val2){ 
+										echo "<img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='200px' width='200px'/><br/>";
+									}
+							?>
+                       
                        </div>
                </div>
 
