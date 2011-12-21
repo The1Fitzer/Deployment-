@@ -50,7 +50,7 @@
 			
 				$("#regsuc").fadeOut(4000);
 				$("#loginfail").fadeOut(4000);	
-
+				$("#loginblock").hide();
 				$("#login").click(function(){
 					$("#loginblock").toggle();
 				});
