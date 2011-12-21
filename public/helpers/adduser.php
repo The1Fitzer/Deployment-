@@ -1,25 +1,22 @@
 <?php
 	include('config.php');
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
 
-	function add_user($user_array){
+	add_user($username, $password);
+
+	function add_user($username, $password){
 		global $mysqli; global $db_name;
 				
-		$user_id     = $user_array[0];
-		$user_name   = $user_array[1];
-		$first_name  = $user_array[2];
-		$second_name = $user_array[3];
-		$gender      = $user_array[4];
-		$locale		 = $user_array[5];
-		$access		 = $user_array[6];
-		$email		 = $user_array[7];
-		
-		$check = "select * from $db_name.users where id = $user_id";
+		$check = "select * from $db_name.users where username = $username";
 		$result = $mysqli->query($check) or die("Select Error: ".$mysqli->error);
 		
 		if($mysqli->affected_rows < 1){
-			$insert_user = "insert into $db_name.users values ($user_id,'$user_name','$email','$first_name','$second_name','$gender','$locale','$access')";
-
-				$result = $mysqli->query($insert_user);
+			$insert_user = "insert into $db_name.users('username','password') values ($username, $password)";
+			$result = $mysqli->query($insert_user);
+		}else{
+			print "-1";
 		}
 	}
 ?>
