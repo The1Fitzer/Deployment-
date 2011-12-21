@@ -53,7 +53,7 @@
                <div class="panel">
 					   <div class="panel-wrapper">
 							<?php foreach($youtube as $val){ 
-										echo "<img src='http://img.youtube.com/vi/$val/0.jpg'";
+										echo "<img src='http://img.youtube.com/vi/$val/0.jpg' height='100px' width='100px'/>";
 									}
 							?>
                        </div>
