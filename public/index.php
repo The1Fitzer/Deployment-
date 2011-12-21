@@ -2,6 +2,10 @@
 	if(isset($_SERVER['QUERY_STRING'])){
 		$full_query_string = $_SERVER['QUERY_STRING'];
 	}
+
+	if($full_query_string == 1){
+		echo '<div style="top:50%; width:50%; background-color: green;">Registration Successfull</div>';
+	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
