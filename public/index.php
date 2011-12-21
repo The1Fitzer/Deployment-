@@ -2,7 +2,7 @@
 	if(isset($_SERVER['QUERY_STRING'])){
 		$full_query_string = $_SERVER['QUERY_STRING'];
 	}
-
+	echo $full_query_string;
 	if($full_query_string == 1){
 		echo '<div style="top:50%; width:50%; background-color: green;">Registration Successfull</div>';
 	}
