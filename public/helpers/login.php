@@ -13,6 +13,7 @@
 		global $db_name, $mysqli;
 		//check for user
 		$check = "select * from $db_name.users where username = '$username'";
+		echo $check;
 		$result = $mysqli->query($check) or die($mysqli->error);
 		$check2 = $result->affected_rows;
 		if($check2 == 0){
