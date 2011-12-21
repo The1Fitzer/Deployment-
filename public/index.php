@@ -38,7 +38,7 @@
 		 <script type="text/javascript">
 			$().ready(function() {
 				$('#coda-slider-1').codaSlider();
-				$("#video").click(function(){
+				$(".video").click(function(){
 					$.fancybox({
 						'padding': 0,
 						'autoScale': false,
@@ -76,7 +76,7 @@
 							<table border=0>
 								<tr>
 							<?php foreach($youtube as $val){ 
-										echo "<td><a id='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
 								</tr>
