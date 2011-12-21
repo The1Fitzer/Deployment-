@@ -15,16 +15,17 @@
 		$check = "select * from $db_name.users where username = '$username'";
 		$result = $mysqli->query($check) or die($mysqli->error);
 		$check2 = $result->fetch_object()->username;
-		die($check2);
-		if($check2 == 0){
-			header('Location: http://deployment-project.orchestra.io/?s=3');
-		}else{
+		
+		if(isset($check2)){
 			$id = $result->fetch_object()->id;
 			$time = time() + 3600;
 			setcookie(username, $username, $time);
 			setcookie(id, $is, $time);
 
 			header('Location: http://deployment-project.orchestra.io/?s=4');
+
+		}else{
+			header('Location: http://deployment-project.orchestra.io/?s=3');
 		}
 	}
 ?>
