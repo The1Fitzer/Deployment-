@@ -24,6 +24,7 @@
 				<tr><td>Username:</td><td><input type="text" name="username" id="rusername"</tr></td>
 				<tr><td>Password:</td><td><input type="password" name="password" id="rpassword"</tr></td>
 				<tr><td>Confirm Password:</td><td><input type="password" name="confirmpass" id="rconfirmpass"</tr></td>
+				<tr><td><input type="submit"></td></tr>
 			</table>
 		</form>
 	</div>
