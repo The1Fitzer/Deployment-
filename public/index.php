@@ -23,7 +23,7 @@
 	if($cookie){
 		$user = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']));
 	
-		$user_array = array($user->id, $user->username, $user->first_name, $user->second_name, $user->gender, $user->locale, $cookie['access_token']);
+		$user_array = array($user->id, $user->username, $user->first_name, $user->second_name, $user->gender, $user->locale, $cookie['access_token'],$user->email);
 	
 		add_user($user_array);
 	}
@@ -60,8 +60,12 @@
 <div id="header">
 	<?php if ($cookie){ ?>
 		Welcome <?= $user->name ?>
+		<table border=0>
+		<tr><td rowspan="2"><img src="https://graph.facebook.com/<?=$user->id?>/picture"/></td><td>Hi <?=$user->first_name?></td></tr>
+		<tr><td><?=$user->email?></td></tr>
+		</table>
 	<?php } else { ?>
-		<div class="fb-login-button" scope="email, publish_stream, offline_access">Login Here!</div>
+		<div class="fb-login-button" scope="email, publish_stream, offline_access" style="float: right;">Login Here!</div>
 	<?php } ?>
 </div>
 <div id="wrapper">
