@@ -5,7 +5,7 @@
 	$string = explode("=",$full_query_string);
 	
 	if($string[1] == 1){
-		echo '<div style="margin:0 auto; position:absolute; top:200px; background-color: green;">Registration Successfull</div>';
+		echo '<div style="margin:0 auto; position:absolute; top:200px; background-color: red;">Registration Successfull</div>';
 	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
