@@ -1,6 +1,6 @@
 <?php
 	include('config.php');
-	function get_vids22(){
+	function get_vids2(){
 		global $db_name, $mysqli;
 		$yt_array = array();
 		$query = "select * from $db_name.videos limit 3,3";
