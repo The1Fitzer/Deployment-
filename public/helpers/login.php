@@ -15,7 +15,7 @@
 		$check = "select * from $db_name.users where username = '$username'";
 		$result = $mysqli->query($check) or die($mysqli->error);
 		$check2 = $result->fetch_object()->username;
-		print_r($result);
+		print_r($result->fetch_object());
 		die();
 		$id     = $result->fetch_object()->id;
 		if(isset($check2)){
