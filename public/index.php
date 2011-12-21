@@ -19,7 +19,7 @@
 		<button id="login">Login</button>
 	</div>
 	<div id="registerblock" style="background-color: red; float: right;">
-		<form id="registerform" action='helpers/add.php'>
+		<form id="registerform" action='/helpers/adduser.php'>
 			<table border=0>
 				<tr><td>Username:</td><td><input type="text" name="username" id="rusername"</tr></td>
 				<tr><td>Password:</td><td><input type="password" name="password" id="rpassword"</tr></td>
