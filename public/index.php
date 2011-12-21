@@ -116,7 +116,7 @@
 	</div><!-- .coda-slider -->
 </div><!-- .coda-slider-wrapper --></center>
 <?php
-	print_r($_COOKIE[]);
+	print_r($_COOKIE);
 ?>
 </div>
 </div>
