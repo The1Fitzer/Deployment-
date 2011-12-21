@@ -38,7 +38,25 @@
 		 <script type="text/javascript">
 			$().ready(function() {
 				$('#coda-slider-1').codaSlider();
-				$("a#inline").fancybox();
+				$("#video").click(function(){
+					$.fancybox({
+						'padding': 0,
+						'autoScale': false,
+						'transitionIn': 'none',
+						'transitionOut': 'none',
+						'title'         : this.title,
+						'width'         : 640,
+						'height'        : 385,
+						'href'          : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+						'type'          : 'swf',
+						'swf'           : {
+						'wmode'             : 'transparent',
+						'allowfullscreen'   : 'true'
+						}
+					});
+					return false;
+				});
+				});	
 			});
 		 </script>
 	<!-- End JavaScript -->
@@ -59,17 +77,11 @@
 							<table border=0>
 								<tr>
 							<?php foreach($youtube as $val){ 
-										echo "<td><a id='inline' href='#$val'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
+										echo "<td><a id='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
 								</tr>
 							</table>
-							<?php foreach($youtube as $val){
-								//echo "<div style='display:none;'><div id='$val'><iframe width='560' height='315' src=http://www.youtube.com/embed/$val' frameborder='0' allowfullscreen></iframe></div></div>";
-								echo "<div style='display:none;'><div id='$val'>Hello World</div></div>";
-							}
-				
-							?>
                        </div>
                </div>
 
