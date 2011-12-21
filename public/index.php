@@ -89,7 +89,7 @@
 							<table border=0>
 							<tr>
                             <?php foreach($youtube2 as $val2){ 
-										echo "<td><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></td>";
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$va2l' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
 							</tr>
