@@ -14,7 +14,7 @@
 		//check for user
 		$check = "select * from $db_name.users where username = '$username'";
 		$result = $mysqli->query($check) or die($mysqli->error);
-		$check2 = $result->affected_rows;
+		$check2 = $mysqli->affected_rows;
 		die($check2);
 		if($check2 == 0){
 			header('Location: http://deployment-project.orchestra.io/?s=3');
