@@ -12,8 +12,19 @@
 <body>
 
 <div id="header">
-	<button>Register</button>
-	<button>Login</button>
+	<div id="loginblock" style="float: right;">
+		<button id="register">Register</button>
+		<button id="login">Login</button>
+	</div>
+	<div id="registerblock" style="background-color: red; float: right;">
+		<form id="registerform">
+			<table border=0>
+				<tr><td>Username:</td><td><input type="text" name="username" id="username"</tr></td>
+				<tr><td>Password:</td><td><input type="password" name="password" id="password"</tr></td>
+				<tr><td>Confirm Password:</td><td><input type="password" name="confirmpass" id="confirmpass"</tr></td>
+			</table>
+		</form>
+	</div>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
 <div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
