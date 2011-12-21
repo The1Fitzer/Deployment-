@@ -14,7 +14,7 @@
 
  //This makes sure they did not leave any fields blank
 
- if (!$_POST['username'] | !$_POST['pass'] | !$_POST['pass2'] | !$_POST['stock1'] | !$_POST['stock2'] | !$_POST['stock3']  ) {
+ if (!$_POST['username'] | !$_POST['pass'] | !$_POST['pass2']) {
 
  		die('You did not complete all of the required fields');
 
