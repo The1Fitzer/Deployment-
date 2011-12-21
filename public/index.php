@@ -1,5 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+	include('/helpers/getvideos.php');
 
+	$youtube = get_vids();
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -47,8 +51,11 @@
 <div class="coda-slider-wrapper">
        <div class="coda-slider preload" id="coda-slider-1">
                <div class="panel">
-                       <div class="panel-wrapper">
-                                <img src="http://tinypages.ie/logo.png" />                              
+					   <div class="panel-wrapper">
+							<?php foreach($youtube as $val){ 
+										echo "<img src='http://img.youtube.com/vi/$val/0.jpg'";
+									}
+							?>
                        </div>
                </div>
 
