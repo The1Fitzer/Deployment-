@@ -63,7 +63,7 @@
 
 <div id="header">
 	<?php if(isset($_COOKIE['username'])){?>
-	<div id="welcome" style="float: right;">Welcome <?=$_COOKIE['username']?></div>
+	<div id="welcome" style="float: right;">Welcome <?=$_COOKIE['username'];?></div>
 	<?php} else{ ?>
 	<div id="loginblock" style="float: right;">
 		<button id="register">Register</button>
