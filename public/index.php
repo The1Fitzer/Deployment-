@@ -38,6 +38,7 @@
 		 <script type="text/javascript">
 			$().ready(function() {
 				$('#coda-slider-1').codaSlider();
+				$("a#inline").fancybox();
 			});
 		 </script>
 	<!-- End JavaScript -->
