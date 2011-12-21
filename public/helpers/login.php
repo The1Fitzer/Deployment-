@@ -19,7 +19,8 @@
 		if(isset($check2)){
 			while($row = $result->fetch_object()){
 				$id = $row->id;
-			}	
+			}
+			echo "$id<br/><br/>"	
 			$time = time() + 3600;
 			setcookie('username', $username, $time);
 			setcookie('id', $id, $time);
