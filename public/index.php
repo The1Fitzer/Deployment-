@@ -20,11 +20,11 @@
 	}
 
 	$cookie = get_facebook_cookie(YOUR_APP_ID, YOUR_APP_SECRET);
-
-	$user = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']));
-
-	$user_array = array($user->id, $user->username, $user->first_name, $user->second_name, $user->gender, $user->locale, $cookie['access_token']);
 	if($cookie){
+		$user = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']));
+	
+		$user_array = array($user->id, $user->username, $user->first_name, $user->second_name, $user->gender, $user->locale, $cookie['access_token']);
+	
 		add_user($user_array);
 	}
 ?>
