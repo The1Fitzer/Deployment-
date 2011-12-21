@@ -1,9 +1,7 @@
 <?php
 	if(isset($_SERVER['QUERY_STRING'])){
 		$full_query_string = $_SERVER['QUERY_STRING'];
-	}
 	$string = explode("=",$full_query_string);
-	if(isset($string)){	
 	if($string[1] == 1){
 		echo '<div id="regsuc" style="margin:0 auto; position:relative; top:200px; background-color: green; border-radius:15px; width:200px; z-index:10000000;">Registration Successfull</div>';
 	}elseif($string[1] == 2){
