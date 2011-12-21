@@ -5,7 +5,13 @@
 	$string = explode("=",$full_query_string);
 	
 	if($string[1] == 1){
-		echo '<div style="margin:0 auto; position:relative; top:200px; background-color: green; border-radius:15px; width:200px; z-index:10000000;">Registration Successfull</div>';
+		echo '<div id="regsuc" style="margin:0 auto; position:relative; top:200px; background-color: green; border-radius:15px; width:200px; z-index:10000000;">Registration Successfull</div>';
+	}elseif($string[1] == 2){
+		echo '<div id="loginfail" style="margin:0 auto; position:relative; top:200px; background-color: red; border-radius:15px; width:200px; z-index:10000000;">Fields Empty</div>';
+	}elseif($string[1] == 3){
+		echo '<div id="loginfail" style="margin:0 auto; position:relative; top:200px; background-color: red; border-radius:15px; width:200px; z-index:10000000;">User does not exist</div>';
+	}elseif($string[1] == 4){
+			echo '<div id="loginfail" style="margin:0 auto; position:relative; top:200px; background-color: red; border-radius:15px; width:200px; z-index:10000000;">Login Successful</div>';
 	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -41,6 +47,13 @@
 		 <script type="text/javascript">
 			$().ready(function() {
 				$('#coda-slider-1').codaSlider();
+			
+				$("#regsuc").fadeOut(4000);
+				$("#loginfail").fadeOut(4000);	
+
+				$("#login").click(function(){
+					$("#loginblock").toggle();
+				});
 			});
 		 </script>
 	<!-- End JavaScript -->
@@ -49,6 +62,9 @@
 <body>
 
 <div id="header">
+	<?php if(isset($_COOKIE['username'])){?>
+	<div id="welcome" style="float: right;">Welcome <?=$_COOKIE['username']?></div>
+	<?php} else{ ?>
 	<div id="loginblock" style="float: right;">
 		<button id="register">Register</button>
 		<button id="login">Login</button>
@@ -62,6 +78,17 @@
 			</table>
 		</form>
 	</div>
+	<div id="loginblock" style="background-color: red; float: right;">
+		<form id="loginform" action='/helpers/login.php' method="post">
+			<table border=0>
+				<tr><td>Username:</td><td><input type="text" name="username" id="lusername"</tr></td>
+				<tr><td>Password:</td><td><input type="password" name="password" id="lpassword"</tr></td>
+				<tr><td><input type="submit"></td></tr>
+			</table>
+		</form>
+	</div>
+
+	<?php } ?>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
 <div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
