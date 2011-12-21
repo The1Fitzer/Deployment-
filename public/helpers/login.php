@@ -19,8 +19,8 @@
 		if(isset($check2)){
 			$id = $result->fetch_object()->id;
 			$time = time() + 3600;
-			setcookie(username, $username, $time);
-			setcookie(id, $is, $time);
+			setcookie('username', $username, $time);
+			setcookie('id', $is, $time);
 
 			header('Location: http://deployment-project.orchestra.io/?s=4');
 
