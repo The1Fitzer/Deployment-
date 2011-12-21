@@ -1,7 +1,7 @@
 <?php // Connects to your Database 
- mysql_connect("mysql4.mylogin.ie", "deployment", "password") or die(mysql_error()); 
+ mysql_connect("a.db.shared.orchestra.io", "user_ce82f697", "vnu&c4)J)f2tGt") or die(mysql_error()); 
 
- mysql_select_db("deployment") or die(mysql_error()); 
+ mysql_select_db("db_ce82f697") or die(mysql_error()); 
 
 //Checks if there is a login cookie 
 
