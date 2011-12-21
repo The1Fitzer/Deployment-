@@ -1,7 +1,7 @@
 <?php
 	include('config.php');
 
-	$query = "select * from $db_name";
+	$query = "select * from $db_name.videos";
 
 	$result = $mysqli->query($query) or die($mysqli->error);
 
