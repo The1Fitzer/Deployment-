@@ -1,4 +1,5 @@
 <?php
+	include('/helpers/adduser.php');
 	define('YOUR_APP_ID', '235024413234041');
 	define('YOUR_APP_SECRET','d78a09e226c896d919d1de00c4b1cce3');
 	
