@@ -8,7 +8,7 @@
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
 <link rel='stylesheet' href='helpers/assets/js/jquery.jgrowl.css' type='text/css'>
-<script type='text/javascript' src='helpers/assets/js/newnewnew.js'></script>
+<script type='text/javascript' src='helpers/assets/js/all2.js'></script>
 </head>
 
 <body>
@@ -19,11 +19,10 @@
 		<button id="login">Login</button>
 	</div>
 	<div id="registerblock" style="background-color: red; float: right;">
-		<form id="registerform">
+		<form id="registerform" action='helpers/add.php'>
 			<table border=0>
 				<tr><td>Username:</td><td><input type="text" name="username" id="rusername"</tr></td>
 				<tr><td>Password:</td><td><input type="password" name="password" id="rpassword"</tr></td>
-				<tr><td>Confirm Password:</td><td><input type="password" name="confirmpass" id="rconfirmpass"</tr></td>
 				<tr><td><input type="submit"></td></tr>
 			</table>
 		</form>

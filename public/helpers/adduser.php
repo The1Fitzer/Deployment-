@@ -14,10 +14,8 @@
 		
 		if($mysqli->affected_rows < 1){
 			$insert_user = "insert into $db_name.users('username','password') values ($username, $password)";
-			$result = $mysqli->query($insert_user);
-			print 1;
-		}else{
-			print -1;
+			$result = $mysqli->query($insert_user) or die("Error Addind: ".$mysqli->error);
+			header("Location: http://deployment-project.orchestra.io/?s=1");
 		}
 	}
 ?>
