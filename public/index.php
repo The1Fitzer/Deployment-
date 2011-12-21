@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 <title>College Life</title>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
+<link rel='stylesheet' href='helpers/assets/js/jquery.jqrowl.js' type='text/css'>
 <script type='text/javascript' src='helpers/assets/js/all.js'></script>
 </head>
 
@@ -19,9 +21,9 @@
 	<div id="registerblock" style="background-color: red; float: right;">
 		<form id="registerform">
 			<table border=0>
-				<tr><td>Username:</td><td><input type="text" name="username" id="username"</tr></td>
-				<tr><td>Password:</td><td><input type="password" name="password" id="password"</tr></td>
-				<tr><td>Confirm Password:</td><td><input type="password" name="confirmpass" id="confirmpass"</tr></td>
+				<tr><td>Username:</td><td><input type="text" name="username" id="rusername"</tr></td>
+				<tr><td>Password:</td><td><input type="password" name="password" id="rpassword"</tr></td>
+				<tr><td>Confirm Password:</td><td><input type="password" name="confirmpass" id="rconfirmpass"</tr></td>
 			</table>
 		</form>
 	</div>
