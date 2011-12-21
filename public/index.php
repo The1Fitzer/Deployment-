@@ -56,7 +56,7 @@
 	<?php if ($cookie){ ?>
 		Welcome <?= $user->name ?>
 	<?php } else { ?>
-		<div class="fb-login-button" data-perms="email, publish_stream, offline_access">Login Here!</div>
+		<div class="fb-login-button" scope="email, publish_stream, offline_access">Login Here!</div>
 	<?php } ?>
 </div>
 <div id="wrapper">
