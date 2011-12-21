@@ -65,7 +65,8 @@
 								</tr>
 							</table>
 							<?php foreach($youtube as $val){
-								echo "<div style='display:none;'><div id='$val'><iframe width='560' height='315' src=http://www.youtube.com/embed/$val' frameborder='0' allowfullscreen></iframe></div></div>";
+								//echo "<div style='display:none;'><div id='$val'><iframe width='560' height='315' src=http://www.youtube.com/embed/$val' frameborder='0' allowfullscreen></iframe></div></div>";
+								echo "<div style='display:none;'><div id='$val'>Hello World</div></div>";
 							}
 				
 							?>
