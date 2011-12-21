@@ -2,7 +2,6 @@
 	include('config.php');
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-	die($username);
 	
 	if(isset($username)){
 		login($username, $password);
@@ -14,7 +13,7 @@
 		global $db_name, $mysqli;
 		//check for user
 		$check = "select * from $db_name.users where username = '$username'";
-		echo $check;
+		die($check);
 		$result = $mysqli->query($check) or die($mysqli->error);
 		$check2 = $result->affected_rows;
 		if($check2 == 0){
