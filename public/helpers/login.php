@@ -2,6 +2,7 @@
 	include('config.php');
 	$username = $_POST['username'];
 	$password = $_POST['password'];
+	die($username);
 	
 	if(isset($username)){
 		login($username, $password);
