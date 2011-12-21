@@ -9,13 +9,8 @@
 	function add_user($username, $password){
 		global $mysqli; global $db_name;
 				
-		$check = "select * from $db_name.users where username = $username";
-		$result = $mysqli->query($check) or die("Select Error: ".$mysqli->error);
-		
-		if($mysqli->affected_rows < 1){
-			$insert_user = "insert into $db_name.users('username','password') values ($username, $password)";
-			$result = $mysqli->query($insert_user) or die("Error Addind: ".$mysqli->error);
-			header("Location: http://deployment-project.orchestra.io/?s=1");
-		}
+		$insert_user = "insert into $db_name.users('username','password') values ($username, $password)";
+		$result = $mysqli->query($insert_user) or die("Error Addind: ".$mysqli->error);
+		header("Location: http://deployment-project.orchestra.io/?s=1");
 	}
 ?>
