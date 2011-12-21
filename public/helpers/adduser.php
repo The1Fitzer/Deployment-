@@ -9,7 +9,7 @@
 	function add_user($user_name, $password){
 		global $mysqli; global $db_name;
 				
-		$insert_user = "insert into $db_name.users (username,password) values ($user_name, $password)";
+		$insert_user = "insert into $db_name.users (username,password) values ('$user_name', '$password')";
 		$result = $mysqli->query($insert_user) or die("Error Addind: ".$mysqli->error);
 		header("Location: http://deployment-project.orchestra.io/?s=1");
 	}
