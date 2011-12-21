@@ -53,26 +53,27 @@
        <div class="coda-slider preload" id="coda-slider-1">
                <div class="panel">
 					   <div class="panel-wrapper">
+							<table border=0>
+								<tr>
 							<?php foreach($youtube as $val){ 
-										echo "<img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='200px' width='200px'/><br/>";
+										echo "<td><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='100px' width='200px'/></td>";
 									}
 							?>
+								</tr>
+							</table>
                        </div>
                </div>
 
 <div class="panel">
-                       <div class="panel-wrapper">
+					   <div class="panel-wrapper">
+							<table border=0>
+							<tr>
                             <?php foreach($youtube2 as $val2){ 
-										echo "<img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='200px' width='200px'/><br/>";
+										echo "<td><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='100px' width='200px'/></td>";
 									}
 							?>
-                       
-                       </div>
-               </div>
-
-<div class="panel">
-                       <div class="panel-wrapper">
-                                 <img src="http://tinypages.ie/logo.png" />                              
+							</tr>
+							</table>
                        </div>
                </div>
 
