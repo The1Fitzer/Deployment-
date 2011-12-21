@@ -61,7 +61,7 @@
 <body>
 
 <div id="header">
-	<?php if(isset($_COOKIE['username'])){ ?>
+	<?php  if(isset($_COOKIE['username'])){ ?>
 	<div id="welcome" style="float: right; color: white;">Welcome <?php echo $_COOKIE['username'];?></div>
 	<?php }else{ ?>
 	<div id="userblock" style="float: right;">
@@ -115,6 +115,9 @@
 
 	</div><!-- .coda-slider -->
 </div><!-- .coda-slider-wrapper --></center>
+<?php
+	print_r($_COOKIE);
+?>
 </div>
 </div>
 </body>
