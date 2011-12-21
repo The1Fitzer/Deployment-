@@ -22,9 +22,6 @@ if(isset($_COOKIE['ID_my_site']))
  	}
  	// checks it against the database
  
- 	if (!get_magic_quotes_gpc()) {
- 		$_POST['email'] = addslashes($_POST['email']);
- 	}
  	$check = mysql_query("SELECT * FROM users WHERE username = '".$_POST['username']."'")or die(mysql_error());
  
  //Gives error if user dosen't exist
