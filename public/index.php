@@ -51,7 +51,7 @@
 						'type'          : 'swf',
 						'swf'           : {
 						'wmode'             : 'transparent',
-						'allowfullscreen'   : 'true'
+						'allowfullscreen'   : 'false'
 						}
 					});
 					return false;
