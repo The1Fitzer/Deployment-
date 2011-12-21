@@ -8,7 +8,7 @@
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
 <link rel='stylesheet' href='helpers/assets/js/jquery.jgrowl.css' type='text/css'>
-<script type='text/javascript' src='helpers/assets/js/all.js'></script>
+<script type='text/javascript' src='helpers/assets/js/site.js'></script>
 </head>
 
 <body>
