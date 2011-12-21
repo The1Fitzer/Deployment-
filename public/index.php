@@ -3,7 +3,7 @@
 		$full_query_string = $_SERVER['QUERY_STRING'];
 	}
 	$string = explode("=",$full_query_string);
-	echo $string;
+	print_r($string);
 	if($full_query_string == 1){
 		echo '<div style="top:50%; width:50%; background-color: green;">Registration Successfull</div>';
 	}
