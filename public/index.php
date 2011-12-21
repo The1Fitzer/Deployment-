@@ -68,7 +68,7 @@
 		<tr><td><?=$user->email?></td></tr>
 		</table>
 	<?php } else { ?>
-		<div class="fb-login-button" scope="email, publish_stream, offline_access" style="float: right;">Login Here!</div>
+		<fb:login-button scope='email,publish_stream,offline_access'></fb:login-button>
 	<?php } ?>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
