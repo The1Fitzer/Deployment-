@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 <title>College Life</title>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-<script type='text/javascript' src='/assets/js/all.js'></script>
+<script type='text/javascript' src='helpers/assets/js/all.js'></script>
 </head>
 
 <body>
