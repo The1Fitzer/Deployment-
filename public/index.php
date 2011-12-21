@@ -68,6 +68,9 @@
 	</div><!-- .coda-slider -->
 </div><!-- .coda-slider-wrapper --></center>
 </div>
+<?php
+	print_r($_COOKIE);
+?>
 </div>
 </body>
 </html>
