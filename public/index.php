@@ -62,7 +62,7 @@
 
 <div id="header">
 	<?php if(isset($_COOKIE['username'])){ ?>
-	<div id="welcome" style="float: right;">Welcome <?php echo $_COOKIE['username'];?></div>
+	<div id="welcome" style="float: right; color: white;">Welcome <?php echo $_COOKIE['username'];?></div>
 	<?php }else{ ?>
 	<div id="userblock" style="float: right;">
 		<button id="register">Register</button>
