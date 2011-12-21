@@ -56,7 +56,7 @@
 							<table border=0>
 								<tr>
 							<?php foreach($youtube as $val){ 
-										echo "<td><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='100px' width='200px'/></td>";
+										echo "<td><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></td>";
 									}
 							?>
 								</tr>
@@ -69,7 +69,7 @@
 							<table border=0>
 							<tr>
                             <?php foreach($youtube2 as $val2){ 
-										echo "<td><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='100px' width='200px'/></td>";
+										echo "<td><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></td>";
 									}
 							?>
 							</tr>
