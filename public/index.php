@@ -39,7 +39,7 @@
 <body>
 
 <div id="header">
-<a href="singup.php">Sign up</a>|<a href="login.php">Login</a>
+<a href="signup.php">Sign up</a>|<a href="login.php">Login</a>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
 <div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
