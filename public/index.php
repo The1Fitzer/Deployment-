@@ -51,6 +51,9 @@
 			xfbml	:	true,
 			oauth	: true
 		});
+		FB.Event.subscribe('auth.login', function(response) {
+			 window.location.reload();
+		});
 	};
 	(function(d){
 		var js, id = 'facebook-jssdk'; if(d.getElementById(id)) {return;}
