@@ -56,7 +56,6 @@
 					});
 					return false;
 				});
-				});	
 			});
 		 </script>
 	<!-- End JavaScript -->
