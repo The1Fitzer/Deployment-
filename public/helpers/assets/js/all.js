@@ -5,8 +5,7 @@ $(document).ready(function(){
 		$("#registerblock").toggle();
 	});
 
-	$("#registerform").click(function(e){
-		$this = $(this);
+	$("#registerform").submit(function(e){
 		var username = $("#rusername").val();
 		var password = $("#rpassword").val();
 		var confpass = $("#confimpass").val();
