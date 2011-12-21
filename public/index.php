@@ -18,7 +18,8 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 <title>College Life</title>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-<script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
+	<script type='text/javascript' src='helpers/assets/js/jquery.jgrowl_minimized.js'></script>
+	<script type="text/javascript" src="helpers/assets/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <link rel='stylesheet' href='helpers/assets/js/jquery.jgrowl.css' type='text/css'>
 <script type='text/javascript' src='helpers/assets/js/all2.js'></script>
 
@@ -27,6 +28,7 @@
 <!-- Begin Stylesheets -->
 		<link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="stylesheets/coda-slider-2.0.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="helpers/assets/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />	
 	<!-- End Stylesheets -->
 	
 	<!-- Begin JavaScript -->
@@ -56,11 +58,16 @@
 							<table border=0>
 								<tr>
 							<?php foreach($youtube as $val){ 
-										echo "<td><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></td>";
+										echo "<td><a id='inline' href='#$val'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
 								</tr>
 							</table>
+							<?php foreach($youtube as $val){
+								echo "<div style='display:none;'><div id='$val'><iframe width='560' height='315' src=http://www.youtube.com/embed/$val' frameborder='0' allowfullscreen></iframe></div></div>";
+							}
+				
+							?>
                        </div>
                </div>
 
