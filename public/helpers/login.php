@@ -21,7 +21,8 @@
 			$time = time() + 3600;
 			setcookie('username', $username, $time);
 			setcookie('id', $is, $time);
-
+			print_r($_COOKIES);
+			die();
 			header('Location: http://deployment-project.orchestra.io/?s=4');
 
 		}else{
