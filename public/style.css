@@ -54,7 +54,7 @@ color:blue;
 }
 
 
-A:link {text-decoration: none;color:#6878a9;}
-A:visited {text-decoration: none}
-A:active {text-decoration: none}
-A:hover {text-decoration: underline; color: red;}
+A:link {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:visited {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:active {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:hover {font-size:16pt;text-decoration: none;color:#333;}
