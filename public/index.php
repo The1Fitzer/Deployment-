@@ -67,7 +67,9 @@
 <a href="signup.php">Sign up</a>|<a href="login.php">Login</a>|<a href="logout.php">logout</a>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
-<div id="menu"><ul><li>Link1</li><li>Link2</li><li>Link3</li><li>Link4</li><li>Link5</li><li>Link6</li></div>
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><ul><a href="../"><li>Home</li></a><a href="/videos"><li>Videos</li></a><a href="../photos"><li>Photos</li></a><a href="../search"><li>Search</li></a><a href="../about"><li>About NCI</li></a><a href="../videos"><li>Contact</li></a></div>
+
+
 <div id="content">
 <div class="coda-slider-wrapper">
        <div class="coda-slider preload" id="coda-slider-1">
