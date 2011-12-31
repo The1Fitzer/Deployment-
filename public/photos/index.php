@@ -10,7 +10,7 @@
 <body>
 <div id="header"></div>
 <div id="wrapper">
-<div id="menu"><br /><br /><br /><br /><br /><br /><br /><ul><a href="../">Home</a><br /><a href="/videos">Videos</a><br /><a href="../photos">Photos</a><br /><a href="../search">Search</a><br /><a href="../about">About NCI</a><br /><a href="../videos">Contact</a></div>
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../">Home</a><br /><a href="/videos">Videos</a><br /><a href="../photos">Photos</a><br /><a href="../about">About NCI</a><br /><a href="../videos">Contact</a></div>
 
 <div id="content">
 <br /><br /><br /><center>
