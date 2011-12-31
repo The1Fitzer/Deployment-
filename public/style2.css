@@ -54,7 +54,12 @@ color:blue;
 }
 
 
-A:link {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
-A:visited {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
-A:active {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
-A:hover {font-size:16pt;text-decoration: none;color:#333;margin-left:30px;}
+A:link {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:visited {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:active {font-size:16pt;text-decoration: none;color:#6878a9;}
+A:hover {font-size:16pt;text-decoration: none;color:#333;}
+
+A.links:link {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
+A.links:visited {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
+A.links:active {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
+A.links:hover {font-size:16pt;text-decoration: none;color:#333;margin-left:30px;}

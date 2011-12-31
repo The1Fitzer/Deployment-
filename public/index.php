@@ -67,7 +67,7 @@
 <a href="signup.php">Sign up</a>|<a href="login.php">Login</a>|<a href="logout.php">logout</a>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
-<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../">Home</a><br /><a href="/videos">Videos</a><br /><a href="../photos">Photos</a><br /><a href="../about">About NCI</a><br /><a href="../videos">Contact</a></div>
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../videos" class="links">Contact</a></div>
 
 
 <div id="content">
