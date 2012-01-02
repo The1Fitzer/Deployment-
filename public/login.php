@@ -40,8 +40,8 @@ if(isset($_COOKIE['ID_my_site']))
  		die('Incorrect password, please try again.');
  	}
 else { 
-define(ID_my_site, "ID_my_site");
-define(Key_my_site, "Key_my_site");
+define("ID_my_site", "ID_my_site");
+define("Key_my_site", "Key_my_site");
 // if login is ok then we add a cookie 	 
 $_POST['username'] = stripslashes($_POST['username']); 	 $hour = time() + 3600; setcookie(ID_my_site, $_POST['username'], $hour); setcookie(Key_my_site, $_POST['pass'], $hour);
 //then redirect them to the members area header
