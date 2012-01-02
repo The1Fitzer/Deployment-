@@ -29,34 +29,10 @@
 <div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../videos" class="links">Contact</a></div>
 
 <div id="content">
-<div class="coda-slider-wrapper">
-       <div class="coda-slider preload" id="coda-slider-1">
-               <div class="panel">
-                       <div class="panel-wrapper">
-                                <img src="http://tinypages.ie/logo.png" />                              
-                       </div>
-               </div>
-
-<div class="panel">
-                       <div class="panel-wrapper">
-                                      <img src="http://tinypages.ie/logo.png" />                         
-                       </div>
-               </div>
-
-<div class="panel">
-                       <div class="panel-wrapper">
-                                 <img src="http://tinypages.ie/logo.png" />                              
-                       </div>
-               </div>
-
-
-	</div><!-- .coda-slider -->
-</div><!-- .coda-slider-wrapper -->
+<h1>Page currently under construction</h1>
+<p>Please check back soon for video content!</p>
 <center>
-<table width="100%" height="500px" border="0">
-<tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
-<tr><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td><td align="center"><img src="http://tinypages.ie/logo.png"></td></tr>
-</table></center>
+
 </div>
 </div>
 </body>
