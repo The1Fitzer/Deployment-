@@ -74,10 +74,15 @@ or die(mysql_error());
 
 
  // now we insert it into the database
+	if(isset($_POST['student'])){
+		$ch = 1;
+	}else{
+		$ch = 2;
+	}
 
  	$insert = "INSERT INTO users (username, password)
 
- 			VALUES ('".$_POST['username']."', '".$_POST['pass']."', '".$_POST['student']."')";
+ 			VALUES ('".$_POST['username']."', '".$_POST['pass']."', '".$ch."')";
 
  	$add_member = mysql_query($insert);
 
@@ -120,7 +125,7 @@ or die(mysql_error());
  <input type="password" name="pass2" maxlength="10">
 
  </td></tr>
- <tr><td>Are you a student?:</td><td>
+ <tr><td>Are you a current student of NCI?:</td><td>
 
  <input type="checkbox" name="student">
 
