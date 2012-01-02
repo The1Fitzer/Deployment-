@@ -83,7 +83,8 @@
 
 <div id="content">
 <?php
-	if(isset($_COOKIE['student']) && $_COOKIE['student'] == 0){
+	if(isset($_COOKIE['student'])){
+	if($_COOKIE['student'] == 0){
 ?>
 <div class="coda-slider-wrapper">
        <div class="coda-slider preload" id="coda-slider-1">
@@ -117,13 +118,48 @@
 	</div><!-- .coda-slider -->
 </div><!-- .coda-slider-wrapper --></center>
 <?php
-	}else{
+	}elseif($_COOKIE['student'] == 1){
 ?>
 	<center>
 		<p>You are a student</p>
 	</center>
 <?
 	}
+}else{
+?>
+<div class="coda-slider-wrapper">
+       <div class="coda-slider preload" id="coda-slider-1">
+               <div class="panel">
+					   <div class="panel-wrapper">
+							<table border=0>
+								<tr>
+							<?php foreach($youtube as $val){ 
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
+									}
+							?>
+								</tr>
+							</table>
+                       </div>
+               </div>
+
+<div class="panel">
+					   <div class="panel-wrapper">
+							<table border=0>
+							<tr>
+                            <?php foreach($youtube2 as $val2){ 
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+									}
+							?>
+							</tr>
+							</table>
+                       </div>
+               </div>
+
+
+	</div><!-- .coda-slider -->
+</div><!-- .coda-slider-wrapper --></center>
+<?php
+}
 ?>
 </div>
 
