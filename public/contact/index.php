@@ -46,8 +46,7 @@ $user = json_decode(file_get_contents(
 	</span>
 </div>
 <div id="wrapper">
-<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../videos" class="links">Contact</a></div>
-
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../contact" class="links">Contact</a></div>
 <div id="content">
 <br /><br /><p>Got a question about NCI? Contact us here!</p><br /><center>
 <iframe src="contact.html" height="100%" width="100%" frameborder="0">Your browser does not support this function.</iframe></center>

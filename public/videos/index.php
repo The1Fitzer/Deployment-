@@ -26,8 +26,7 @@
 <body>
 <div id="header"></div>
 <div id="wrapper">
-<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../videos" class="links">Contact</a></div>
-
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../contact" class="links">Contact</a></div>
 <div id="content">
 <h1>Page currently under construction</h1>
 <p>Please check back soon for video content!</p>
