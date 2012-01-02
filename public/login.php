@@ -47,8 +47,7 @@ $get_student = mysql_query("SELECT student FROM users WHERE username = '".$_POST
 while($row = mysql_fetch_array($get_student)){
 	$student = $row['student'];
 }
-die();
-$_POST['username'] = stripslashes($_POST['username']); 	 $hour = time() + 3600; setcookie(ID_my_site, $_POST['username'], $hour); setcookie(Key_my_site, $_POST['pass'], $hour);
+$_POST['username'] = stripslashes($_POST['username']); 	 $hour = time() + 3600; setcookie(ID_my_site, $_POST['username'], $hour); setcookie(Key_my_site, $_POST['pass'], $hour); setcookie('student', $student, $hour);
 //then redirect them to the members area 
 header("Location: index.php"); } } } else {	 
 // if they are not logged in ?>
