@@ -82,6 +82,9 @@
 
 
 <div id="content">
+<?php
+	if($_COOKIE['student'] == 0){
+?>
 <div class="coda-slider-wrapper">
        <div class="coda-slider preload" id="coda-slider-1">
                <div class="panel">
@@ -113,6 +116,15 @@
 
 	</div><!-- .coda-slider -->
 </div><!-- .coda-slider-wrapper --></center>
+<?php
+	}else{
+?>
+	<center>
+		<p>You are a student</p>
+	</center>
+<?
+	}
+?>
 </div>
 
 </div>
