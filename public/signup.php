@@ -77,7 +77,7 @@ or die(mysql_error());
 
  	$insert = "INSERT INTO users (username, password)
 
- 			VALUES ('".$_POST['username']."', '".$_POST['pass']."')";
+ 			VALUES ('".$_POST['username']."', '".$_POST['pass']."', '".$_POST['student']."')";
 
  	$add_member = mysql_query($insert);
 
@@ -118,6 +118,11 @@ or die(mysql_error());
  <tr><td>Confirm Password:</td><td>
 
  <input type="password" name="pass2" maxlength="10">
+
+ </td></tr>
+ <tr><td>Are you a student?:</td><td>
+
+ <input type="checkbox" name="student">
 
  </td></tr>
  <tr><th colspan=2><input type="submit" name="submit" 
