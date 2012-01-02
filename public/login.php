@@ -44,7 +44,9 @@ define("ID_my_site", "ID_my_site");
 define("Key_my_site", "Key_my_site");
 $get_student = mysql_query("SELECT student FROM users WHERE username = '".$_POST['username']."'") or die(mysql_error());
 // if login is ok then we add a cookie 	 
-echo $get_student;
+while($row = mysql_fetch_array($get_student)){
+	$student = $row['student'];
+}
 die();
 $_POST['username'] = stripslashes($_POST['username']); 	 $hour = time() + 3600; setcookie(ID_my_site, $_POST['username'], $hour); setcookie(Key_my_site, $_POST['pass'], $hour);
 //then redirect them to the members area 
