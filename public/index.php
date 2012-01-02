@@ -72,7 +72,8 @@
 	?>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
-<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../contact" class="links">Contact</a>	<?php 
+<div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../contact" class="links">Contact</a><br/>	
+	<?php 
 		if(isset($_COOKIE['ID_my_site'])){
 			echo "<a href='moodle.ncirl.ie' class='links'>Moodle</a>";
 		}
