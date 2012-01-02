@@ -124,10 +124,10 @@
 		<br/>
 		<h3>Hello <?php echo $_COOKIE['ID_my_site']?></h3><br/><br/>
 		<p>Here are some links that we think you would be interested in!<br/>
-			<a href="http://moodle.ncirl.ie" class="links">Moodle</a><br/>
-			<a href="http://myncistudent.ncirl.ie" class="links">MyNCIStudent</a><br/>
-			<a href="/videos" class="links">Videos</a><br/>
-			<a href="http://www.ncisu.ie" class="links">Students Union</a>
+			<a href="http://moodle.ncirl.ie" class="links" target="_blank">Moodle</a><br/>
+			<a href="https://myncistudent.ncirl.ie" class="links" target="_blank">MyNCIStudent</a><br/>
+			<a href="/videos" class="links" target="_blank">Videos</a><br/>
+			<a href="http://www.ncisu.ie" class="links" target="_blank">Students Union</a>
 	</center>
 <?
 	}
