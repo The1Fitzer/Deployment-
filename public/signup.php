@@ -77,7 +77,7 @@ or die(mysql_error());
 	if(isset($_POST['student'])){
 		$ch = 1;
 	}else{
-		$ch = 2;
+		$ch = 0;
 	}
 
  	$insert = "INSERT INTO users (username, password, student)
