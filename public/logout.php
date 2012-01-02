@@ -8,6 +8,8 @@
 
  setcookie(Key_my_site, gone, $past); 
 
+ setcookie('student', gone, $past);
+
  header("Location: index.php"); 
 
  ?> 
