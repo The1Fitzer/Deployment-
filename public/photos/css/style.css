@@ -67,7 +67,7 @@ span#loading{
     height:30px;
 }
 #panel{
-    background-color:#222;
+    background-color:#fff;
     width:100%;
     position:fixed;
     bottom:0px;
