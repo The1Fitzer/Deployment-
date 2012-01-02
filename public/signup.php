@@ -80,7 +80,7 @@ or die(mysql_error());
 		$ch = 2;
 	}
 
- 	$insert = "INSERT INTO users (username, password)
+ 	$insert = "INSERT INTO users (username, password, student)
 
  			VALUES ('".$_POST['username']."', '".$_POST['pass']."', '".$ch."')";
 
