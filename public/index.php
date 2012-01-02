@@ -83,7 +83,7 @@
 
 <div id="content">
 <?php
-	if($_COOKIE['student'] == 0){
+	if(isset($_COOKIE['student']) && $_COOKIE['student'] == 0){
 ?>
 <div class="coda-slider-wrapper">
        <div class="coda-slider preload" id="coda-slider-1">
