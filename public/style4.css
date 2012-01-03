@@ -54,6 +54,18 @@ color:blue;
 }
 
 
+
+#left
+{
+float:left;
+}
+#right
+{
+float:right;
+}
+
+
+
 h1,h2
 {
 font-family:helvetica;

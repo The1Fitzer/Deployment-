@@ -70,14 +70,20 @@
 			echo "|<a href='logout.php'>logout</a>";
 		}
 	?>
+	<center>
 </div>
 <div id="wrapper" style='background-color: white !important;'>
 <div id="menu"><br /><br /><br /><br /><br /><br /><br /><a href="../"  class="links">Home</a><br /><a href="/videos"  class="links">Videos</a><br /><a href="../photos" class="links">Photos</a><br /><a href="../about" class="links">About NCI</a><br /><a href="../contact" class="links">Contact</a><br/>	
+	
+	<div id="left"></div>
+	
+	<div id="right">
 	<?php 
 		if(isset($_COOKIE['ID_my_site'])){
 			echo "<a href='http://moodle.ncirl.ie' class='links'>Moodle</a>";
 		}
 	?>
+		</div>
 	</div>
 
 
