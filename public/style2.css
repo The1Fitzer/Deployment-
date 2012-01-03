@@ -54,10 +54,20 @@ color:blue;
 }
 
 
+h1,h2
+{
+font-family:helvetica;
+}
+
+p
+{
+font-family:helvetica;
+}
+
 A:link {font-size:16pt;text-decoration: none;color:#6878a9;}
 A:visited {font-size:16pt;text-decoration: none;color:#6878a9;}
 A:active {font-size:16pt;text-decoration: none;color:#6878a9;}
-A:hover {font-size:16pt;text-decoration: none;color:#333;}
+A:hover {font-size:16pt;text-decoration: none;color:#fff;}
 
 A.links:link {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
 A.links:visited {font-size:16pt;text-decoration: none;color:#6878a9;margin-left:30px;}
