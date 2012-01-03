@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-<link rel="stylesheet" href="../style.css" type="text/css" />
+<link rel="stylesheet" href="../style3.css" type="text/css" />
 <title>College Life</title>
 </head>
 
