@@ -19,7 +19,7 @@
 		 </script>
 	<!-- End JavaScript -->
 
-<link rel="stylesheet" href="../style3.css" type="text/css" />
+<link rel="stylesheet" href="../style4.css" type="text/css" />
 <title>College Life</title>
 </head>
 
