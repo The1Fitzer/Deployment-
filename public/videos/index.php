@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<div id="header">	<a href="signup.php">Sign up</a>|<a href="login.php">Login</a>
+<div id="header">	<a href="../signup.php">Sign up</a>|<a href="../login.php">Login</a>
 		<?php 
 			if(isset($_COOKIE['ID_my_site'])){
 				echo "|<a href='logout.php'>logout</a>";
