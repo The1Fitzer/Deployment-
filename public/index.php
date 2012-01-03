@@ -103,21 +103,35 @@
 									}
 							?>
 								</tr>
+								<tr>
+									<?php foreach($youtube2 as $val2){ 
+												echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+											}
+									?>
+								</tr>
 							</table>
                        </div>
                </div>
 
 <div class="panel">
-					   <div class="panel-wrapper">
+					  <div class="panel-wrapper">
 							<table border=0>
-							<tr>
-                            <?php foreach($youtube2 as $val2){ 
-										echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+								<tr>
+							<?php 
+							foreach($youtube as $val){ 
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
-							</tr>
+								</tr>
+								<tr>
+									<?php 
+									foreach($youtube2 as $val2){ 
+												echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+											}
+									?>
+								</tr>
 							</table>
-                       </div>
+                       </div> 
                </div>
 
 
@@ -150,21 +164,35 @@
 									}
 							?>
 								</tr>
+								<tr>
+									<?php foreach($youtube2 as $val2){ 
+												echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+											}
+									?>
+								</tr>
 							</table>
                        </div>
                </div>
 
 <div class="panel">
-					   <div class="panel-wrapper">
+					  <div class="panel-wrapper">
 							<table border=0>
-							<tr>
-                            <?php foreach($youtube2 as $val2){ 
-										echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+								<tr>
+							<?php 
+							foreach($youtube as $val){ 
+										echo "<td><a class='video' href='http://www.youtube.com/v/$val?fs=1&amp;autoplay=1'><img id='$val' src='http://img.youtube.com/vi/$val/0.jpg' height='150px' width='200px'/></a></td>";
 									}
 							?>
-							</tr>
+								</tr>
+								<tr>
+									<?php 
+									foreach($youtube2 as $val2){ 
+												echo "<td><a class='video' href='http://www.youtube.com/v/$val2?fs=1&amp;autoplay=1'><img id='$val2' src='http://img.youtube.com/vi/$val2/0.jpg' height='150px' width='200px'/></a></td>";
+											}
+									?>
+								</tr>
 							</table>
-                       </div>
+                       </div> 
                </div>
 
 
